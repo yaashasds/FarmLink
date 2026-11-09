@@ -1,0 +1,258 @@
+
+.role-login-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  background: #f7faf7;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+/* Left decorative panel */
+
+.login-decoration {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 38px 9%;
+  background: linear-gradient(145deg, #174b32, #287a4b);
+  color: white;
+}
+
+.login-brand {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.login-decoration-content {
+  max-width: 430px;
+}
+
+.login-decoration-content > span {
+  display: inline-flex;
+  width: 90px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 23px;
+  background: rgba(255, 255, 255, 0.13);
+  font-size: 48px;
+}
+
+.login-decoration-content h2 {
+  color: white;
+  font-size: clamp(30px, 4vw, 43px);
+  line-height: 1.2;
+  margin: 25px 0 15px;
+}
+
+.login-decoration-content p {
+  color: #d8eadc;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.login-decoration > small {
+  color: #c1d9c7;
+  font-size: 12px;
+}
+
+/* Right form area */
+
+.login-form-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 55px 35px;
+}
+
+.login-back-home {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  color: #52705d;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.login-back-home:hover {
+  color: #287a4b;
+}
+
+.login-form-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 35px;
+  border: 1px solid #e3ebe4;
+  border-radius: 19px;
+  background: white;
+  box-shadow: 0 10px 35px rgba(25, 70, 43, 0.07);
+}
+
+.login-mobile-brand {
+  display: none;
+  color: #174b32;
+  font-size: 21px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.login-role-label {
+  color: #287a4b;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.login-form-card h1 {
+  color: #174b32;
+  font-size: 27px;
+  margin: 13px 0 8px;
+}
+
+.login-subtitle {
+  color: #77847a;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.login-form-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form-card form label {
+  color: #34483a;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 15px 0 8px;
+}
+
+.login-form-card form input {
+  width: 100%;
+  min-height: 47px;
+  padding: 12px 14px;
+  border: 1px solid #dce7de;
+  border-radius: 9px;
+  background: white;
+  color: #26382c;
+  outline: none;
+  font-size: 13px;
+}
+
+.login-form-card form input:focus {
+  border-color: #287a4b;
+  box-shadow: 0 0 0 3px rgba(40, 122, 75, 0.11);
+}
+
+.login-password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.login-password-wrapper input {
+  padding-right: 65px !important;
+}
+
+.show-password-button {
+  position: absolute;
+  right: 10px;
+  border: none;
+  background: transparent;
+  color: #287a4b;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-submit-button {
+  width: 100%;
+  min-height: 47px;
+  margin-top: 26px;
+  border: none;
+  border-radius: 9px;
+  background: #287a4b;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.login-submit-button:hover {
+  background: #174b32;
+  transform: translateY(-2px);
+}
+
+.login-demo-note {
+  margin-top: 22px;
+  padding: 13px;
+  border-radius: 9px;
+  background: #f0f7f0;
+}
+
+.login-demo-note strong {
+  color: #287a4b;
+  font-size: 12px;
+}
+
+.login-demo-note p {
+  color: #69776e;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 5px 0 0;
+}
+
+.login-switch {
+  margin: 22px 0 0;
+  color: #78847b;
+  font-size: 12px;
+  text-align: center;
+}
+
+.login-switch a {
+  color: #287a4b;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Responsive layout */
+
+@media (max-width: 800px) {
+  .role-login-page {
+    grid-template-columns: 1fr;
+  }
+
+  .login-decoration {
+    display: none;
+  }
+
+  .login-form-area {
+    min-height: 100vh;
+    padding: 75px 20px 30px;
+  }
+
+  .login-mobile-brand {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form-card {
+    padding: 25px 20px;
+  }
+
+  .login-back-home {
+    left: 20px;
+  }
+
+  .login-form-card h1 {
+    font-size: 23px;
+  }
+}

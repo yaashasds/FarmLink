@@ -1,0 +1,410 @@
+
+
+
+.dashboard-sidebar h2 {
+  margin-bottom: 45px;
+  font-size: 24px;
+}
+
+.menu-label {
+  color: #a5c2ad;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  margin-bottom: 18px;
+}
+
+.dashboard-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dashboard-sidebar nav a {
+  text-decoration: none;
+  color: #d6e5da;
+  padding: 13px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.dashboard-sidebar nav a:hover,
+.dashboard-sidebar nav a.active {
+  background: #286444;
+  color: white;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  color: #c0d4c6;
+  font-size: 13px;
+}
+
+.dashboard-main {
+  display: block;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 30px 40px;
+}
+
+.dashboard-header,
+.profile,
+.welcome-section,
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+}
+
+.dashboard-header p,
+.welcome-section p,
+.content-card p {
+  color: #758479;
+}
+
+.profile {
+  gap: 14px;
+}
+
+.avatar {
+  background: #dcefe0;
+  color: #245d39;
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.welcome-section {
+  margin: 40px 0 28px;
+  background: linear-gradient(120deg, #e2f2e5, #f0f8ed);
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.welcome-section h1 {
+  font-size: 27px;
+}
+
+.add-crop-btn,
+.market-btn {
+  background: #23643e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 20px;
+  cursor: pointer;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.stat-card,
+.content-card {
+  background: white;
+  padding: 22px;
+  border-radius: 13px;
+  border: 1px solid #e7eee8;
+}
+
+.stat-icon {
+  font-size: 25px;
+}
+
+.stat-card p {
+  color: #758479;
+  margin-bottom: 8px;
+}
+
+.stat-card h2 {
+  margin: 0;
+  color: #245d39;
+}
+
+.dashboard-sections {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+  margin-top: 25px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.card-heading a {
+  color: #287447;
+  text-decoration: none;
+}
+
+.crop-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+  border-bottom: 1px solid #edf0ed;
+  gap: 12px;
+}
+
+.crop-row p {
+  margin: 6px 0 0;
+  font-size: 13px;
+}
+
+.crop-status {
+  display: block;
+  color: #287447;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.market-highlight {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #f0f7f0;
+  padding: 17px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.market-highlight > span {
+  font-size: 30px;
+}
+
+.market-highlight p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-sections {
+  grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 600px) {
+  
+
+  .dashboard-main {
+    padding: 16px;
+  }
+
+  .dashboard-header,
+  .welcome-section {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .welcome-section h1 {
+    font-size: 22px;
+  }
+
+  .stats-grid {
+    gap: 10px;
+  }
+
+  .stat-card {
+    padding: 15px;
+  }
+
+  .profile {
+    align-self: flex-end;
+  }
+}
+
+/* =================================
+   FARMLINK SIDEBAR POLISH
+================================= */
+
+/* Sidebar refinement */
+.shared-sidebar {
+  background: linear-gradient(
+    180deg,
+    #174B32 0%,
+    #123D29 100%
+  );
+  padding: 30px 18px;
+  box-shadow: 4px 0 18px rgba(20, 60, 38, 0.08);
+}
+
+/* Brand section */
+.shared-brand {
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.shared-brand span {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+}
+
+/* Navigation links */
+.shared-navigation a {
+  position: relative;
+  padding: 14px 15px;
+  border-radius: 11px;
+  color: #DCEBE0;
+  transition: background 0.25s ease,
+              transform 0.25s ease,
+              color 0.25s ease;
+}
+
+/* Navigation icons */
+.shared-navigation a span {
+  width: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+
+/* Hover effect */
+.shared-navigation a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+  transform: translateX(3px);
+}
+
+/* Active page */
+.shared-navigation a.active {
+  background: #EAF4E9;
+  color: #174B32;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+/* Prevent active item from shifting */
+.shared-navigation a.active:hover {
+  transform: none;
+}
+
+/* Sidebar footer */
+.shared-sidebar-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin-top: auto;
+  padding-top: 22px;
+}
+
+/* Smaller screens */
+@media (max-width: 750px) {
+  .shared-sidebar {
+    box-shadow: 0 4px 15px rgba(20, 60, 38, 0.08);
+  }
+
+  .shared-navigation a {
+    padding: 11px 13px;
+  }
+
+  .shared-navigation a:hover {
+    transform: none;
+  }
+}
+
+
+/* =================================
+   FARMER DASHBOARD - VISUAL POLISH
+================================= */
+
+/* Welcome section */
+.welcome-section {
+  border-radius: 20px;
+  padding: 30px;
+  background: linear-gradient(
+    120deg,
+    #174B32,
+    #287A4B
+  );
+  color: #FFFFFF;
+  box-shadow: 0 8px 24px rgba(23, 75, 50, 0.14);
+}
+
+.welcome-section h1,
+.welcome-section h2 {
+  color: #FFFFFF;
+}
+
+/* Statistics layout */
+.stats-grid {
+  gap: 20px;
+  margin-top: 25px;
+}
+
+/* Individual statistic cards */
+.stat-card {
+  padding: 23px;
+  min-width: 0;
+}
+
+/* Dashboard section spacing */
+.dashboard-sections {
+  gap: 24px;
+  margin-top: 28px;
+}
+
+/* Dashboard section headings */
+.dashboard-sections h2,
+.dashboard-sections h3 {
+  margin-bottom: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .dashboard-main {
+    padding: 25px 22px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 550px) {
+  .dashboard-main {
+    padding: 18px 14px;
+  }
+
+  .welcome-section {
+    padding: 22px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.farmer-logout-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #ffffff;
+  color: #287A4B;
+  border: 1px solid #287A4B;
+  border-radius: 9px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.farmer-logout-button:hover {
+  background: #287A4B;
+  color: #ffffff;
+}

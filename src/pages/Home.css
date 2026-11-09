@@ -1,0 +1,516 @@
+
+/* FARM LINK HOME PAGE */
+
+.home-page {
+  min-height: 100vh;
+  background: #f7faf7;
+  color: #26382c;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+.home-navbar {
+  min-height: 76px;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: #fff;
+  border-bottom: 1px solid #e5eee6;
+}
+
+.home-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #174b32;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+.home-brand span {
+  font-size: 27px;
+}
+
+.home-nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.home-nav-links a {
+  color: #52645a;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.home-nav-links a:hover {
+  color: #287a4b;
+}
+
+.home-nav-login {
+  padding: 10px 21px;
+  border: 1px solid #287a4b;
+  border-radius: 8px;
+  color: #287a4b;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.home-nav-login:hover {
+  background: #eaf4e9;
+}
+
+.home-hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 50px;
+  padding: 75px 9%;
+  background: linear-gradient(120deg, #edf6ed, #f8fbf7);
+}
+
+.home-eyebrow,
+.home-section-label {
+  color: #287a4b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.home-hero h1 {
+  color: #174b32;
+  font-size: clamp(38px, 5vw, 61px);
+  line-height: 1.12;
+  margin: 20px 0;
+  letter-spacing: -1.5px;
+}
+
+.home-hero h1 span {
+  color: #398653;
+}
+
+.home-hero-content > p {
+  max-width: 560px;
+  color: #647269;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.home-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 28px;
+}
+
+.home-primary-button,
+.home-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 21px;
+  border-radius: 9px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.home-primary-button {
+  background: #287a4b;
+  color: white;
+}
+
+.home-primary-button:hover {
+  background: #174b32;
+  transform: translateY(-2px);
+}
+
+.home-secondary-button {
+  border: 1px solid #c9d9cc;
+  color: #174b32;
+  background: white;
+}
+
+.home-secondary-button:hover {
+  background: #eaf4e9;
+}
+
+.home-trust-note {
+  margin-top: 28px;
+  color: #718077;
+  font-size: 12px;
+}
+
+
+/* HERO IMAGE AND CONNECTION CARD */
+
+.home-hero-visual {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.home-image-placeholder {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  height: 270px;
+  min-height: 270px;
+  overflow: hidden;
+  display: block;
+  border-radius: 22px;
+  background: #dcebdc;
+  box-shadow: 0 12px 30px rgba(23, 75, 50, 0.12);
+}
+
+.home-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-image-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px;
+  background: linear-gradient(
+    to top,
+    rgba(15, 48, 29, 0.78),
+    transparent 80%
+  );
+}
+
+.home-image-overlay h3 {
+  color: white;
+  font-size: 25px;
+  margin: 0 0 5px;
+}
+
+.home-image-overlay p {
+  color: #edf6ee;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* DIRECT CONNECTIONS CARD */
+
+.home-floating-card {
+  position: relative;
+  left: auto;
+  bottom: auto;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 5px;
+  padding: 12px 17px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 5px 18px rgba(20, 60, 38, 0.10);
+}
+
+.home-floating-card > span {
+  font-size: 26px;
+}
+
+.home-floating-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.home-floating-card strong {
+  color: #174b32;
+  font-size: 13px;
+}
+
+.home-floating-card small {
+  color: #849087;
+  font-size: 11px;
+}
+
+
+/* Intro section */
+
+.home-intro {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 75px 25px 45px;
+  text-align: center;
+}
+
+.home-intro h2,
+.home-role-heading h2 {
+  color: #174b32;
+  font-size: clamp(25px, 3vw, 34px);
+  margin: 13px 0;
+}
+
+.home-intro p,
+.home-role-heading p {
+  color: #68766d;
+  line-height: 1.7;
+}
+
+/* Role selection */
+
+.home-role-section {
+  padding: 25px 9% 75px;
+}
+
+.home-role-heading {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.home-role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.home-role-card {
+  padding: 32px;
+  border: 1px solid #e0eae1;
+  border-radius: 19px;
+  background: white;
+  box-shadow: 0 5px 20px rgba(25, 70, 43, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(25, 70, 43, 0.1);
+}
+
+.home-role-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: #eaf4e9;
+  font-size: 29px;
+  margin-bottom: 20px;
+}
+
+.home-role-tag {
+  color: #398653;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.home-role-card h3 {
+  color: #174b32;
+  font-size: 25px;
+  margin: 11px 0;
+}
+
+.home-role-card p {
+  min-height: 55px;
+  color: #68766d;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.home-role-button {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 18px;
+  padding: 13px 18px;
+  border-radius: 9px;
+  background: #287a4b;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.home-role-button:hover {
+  background: #174b32;
+}
+
+/* Feature strip */
+
+.home-features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  padding: 45px 9%;
+  background: #edf5ed;
+}
+
+.home-features > div {
+  text-align: center;
+  padding: 15px;
+}
+
+.home-features span {
+  font-size: 31px;
+}
+
+.home-features h3 {
+  color: #174b32;
+  font-size: 17px;
+}
+
+.home-features p {
+  color: #68766d;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Footer */
+
+.home-footer {
+  padding: 32px 20px;
+  background: #174b32;
+  color: #dcebe0;
+  text-align: center;
+}
+
+.home-footer strong {
+  font-size: 20px;
+}
+
+.home-footer p {
+  font-size: 13px;
+}
+
+.home-footer small {
+  color: #a9c7b3;
+  font-size: 11px;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    padding: 55px 7%;
+  }
+
+  .home-hero-visual {
+    min-height: 270px;
+  }
+
+  .home-image-placeholder {
+    min-height: 250px;
+  }
+
+  .home-floating-card {
+    left: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-navbar {
+    padding: 15px 5%;
+    flex-wrap: wrap;
+  }
+
+  .home-nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .home-nav-links a {
+    font-size: 12px;
+  }
+
+  .home-hero {
+    padding: 45px 6%;
+  }
+
+  .home-role-section {
+    padding: 20px 6% 55px;
+  }
+
+  .home-role-grid,
+  .home-features {
+    grid-template-columns: 1fr;
+  }
+
+  .home-role-card {
+    padding: 25px;
+  }
+
+  .home-features {
+    gap: 10px;
+    padding: 30px 6%;
+  }
+}
+
+/* LOGIN DROPDOWN */
+
+.home-login-dropdown {
+  position: relative;
+}
+
+.home-nav-login {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #287a4b;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home-nav-login:hover {
+  background: #174b32;
+}
+
+.home-login-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  z-index: 100;
+  width: 190px;
+  padding: 8px;
+  border: 1px solid #e3ebe4;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 8px 25px rgba(25, 70, 43, 0.13);
+}
+
+.home-login-menu a {
+  display: block;
+  padding: 12px;
+  border-radius: 7px;
+  color: #20352a;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.home-login-menu a:hover {
+  background: #eaf4e9;
+  color: #287a4b;
+}
